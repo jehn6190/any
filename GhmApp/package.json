@@ -1,0 +1,14 @@
+{
+  "name": "ghmapp",
+  "version": "1.0.0",
+  "description": "GHM Channel app",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server "
+  },
+  "author": "jehnclade",
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-router": "^0.3.2"
+  }
+}

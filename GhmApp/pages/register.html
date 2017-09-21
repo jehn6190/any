@@ -1,0 +1,344 @@
+
+        <div class="main-panel">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <!--      Wizard container        -->
+                        <div class="wizard-container">
+                            <div class="card wizard-card" data-color="rose" id="wizardProfile">
+                                <form ng-submit="doRegSubmit(user)">
+                                    <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+                                    <div class="wizard-header">
+                                        <h5>This information will let us know more about you.</h5>
+                                    </div>
+                                    <div class="wizard-navigation">
+                                        <ul>
+                                            <li>
+                                                <a href="#bio" data-toggle="tab">Bio</a>
+                                            </li>
+                                            <li>
+                                                <a href="#identity" data-toggle="tab">Identity</a>
+                                            </li>
+                                            <li>
+                                                <a href="#religion" data-toggle="tab">Religion</a>
+                                            </li>
+                                            <li>
+                                                <a href="#service" data-toggle="tab">Service Status</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="bio">
+                                            <div class="row">
+                                                <h4 class="info-text">Please Ensure You Fill All Fields Correctly</h4>
+                                                <div class="col-sm-12">
+                                                    <div class="row">             
+                                                        <div class = "col-sm-6">                                                          
+                                                            <div class="form-group label-floating">
+                                                                        <label class="control-label">Surname
+                                                                          
+                                                                            </label>
+                                                                       <input name="surname" required ng-model="user.surname"  type="text" class="form-control">
+                                                            </div>
+                                                        </div>    
+                                                        <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                                          <label class="control-label">Othername
+                                                                           
+                                                                       </label>
+                                                                      <input name="othername" required ng-model="user.othername"  type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                   <label class="control-label">Gender</label>
+                                                                   <select name="gender" required ng-model="user.gender" class="form-control">
+                                                                         <option disabled="" selected=""></option>
+                                                                          <option value="F">Female</option>
+                                                                         <option value="M">Male</option>                   
+                                                                    </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                               <label class="control-label">State of Origin
+                                                        
+                                                              </label>
+                                                              <input type="text" required ng-model="user.state"  name="stateOrigin" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">State of Residence
+                                                                
+                                                              </label>
+                                                              <input type="text" required ng-model="user.stateRes" name="stateResidence" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">Home Address
+                                                               
+                                                              </label>
+                                                               <input type="text" ="" name="homeAddress" required ng-model ="user.homeAdd" class="form-control">
+                                                           </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                  <label class="control-label">Email
+                                                               
+                                                                   </label>
+                                                                   <input name="email" required ng-model="user.email" type="email"  class="form-control">
+                                                            </div>
+                                                       </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                <label class="label-control">Date of Birth
+                                                                       
+                                                                </label>
+                                                                <input class="form-control datepicker" type="text" name="dob" required ng-model="user.birth"  value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                               <label class="control-label">Facebook ID
+                                                               
+                                                                </label>
+                                                                  <input type="text" required ng-model="user.fbId" name="fbid" class="form-control">
+                                                            </div>
+                                                         </div>  
+                                                        <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                                <label class="control-label">phone Number
+                                                                
+                                                                </label>
+                                                              <input type="number" name="phone" required ng-model="user.phoneNum" min="11"   class="form-control">
+                                                            </div>
+                                                        </div>     
+                                                    </div>         
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        <div class="tab-pane" id="identity">
+                                           <div class="row">
+                                                     <h4 class="info-text">Please Ensure You Fill All Fields Correctly</h4>
+                                                <div class="col-sm-12">
+                                                    <div class="row">                               
+                                                        <div class = "col-sm-6">           
+                                                           <div class="form-group label-floating">
+                                                             <label class="control-label">Select College</label>
+                                                               <select name="college" required ng-model ="user.college" class="form-control">
+                                                                  <option disabled="" selected=""></option>
+                                                                   <option value="College of Agricultural Sciences">College of Agricultural Sciences</option>
+                                                                   <option value="College of Business and Social Sciences">College of  Business and Social Sciences  </option>
+                                                                   <option value="College of Science and Engineering">College of Science and Engineering </option>
+                                                                </select>
+                                                           </div>
+                                                        </div>
+                                                         <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                                <label class="control-label">Programme
+                                                                </label>
+                                                              <input type="text" name="programme"  required ng-model = "user.programme" class="form-control">
+                                                            </div>
+                                                        </div> 
+                                                        <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                                <label class="control-label">Matriculation Number
+                                                                
+                                                                </label>
+                                                              <input type="" name="matric"  required ng-model ="user.matricNo"   max="9" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Registration Number
+                                                                
+                                                                </label>
+                                                              <input type="number" name="reg" required ng-model ="user.regNo" max="7" class="form-control">
+                                                            </div>
+                                                        </div> 
+                                                        <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                               <label class="control-label">Extra-Curriculum Activities
+                                                                
+                                                                </label>
+                                                                  <input type="text " name="extras" required ng-model ="user.ExCurri" class="form-control">
+                                                            </div>
+                                                         </div>  
+                                                         <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                               <label class="control-label">Other school Activities
+                                                                
+                                                                </label>
+                                                                  <input type="text" name = "osa" required ng-model = "user.schoolAct" class="form-control">
+                                                            </div>
+                                                         </div>  
+                                                 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="tab-pane" id="religion">
+                                            <div class="row">
+                                                <h4 class="info-text">Please Ensure You Fill All Fields Correctly</h4>
+                                                <div class="col-sm-12">
+                                                    <div class="row">             
+                                                        <div class = "col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">Place of worship
+                                                              </label>
+                                                               <input type="text"  name = "pow" required ng-model = "user.placeWorship" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class = "col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">Denomination
+                                                              </label>
+                                                               <input type="text" name = "denom" required ng-model= user.denomination class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                           <div class="form-group label-floating">
+                                                                <label class="control-label">Year joined Church
+                                                                
+                                                                </label>
+                                                              <input type="number" name="yearJoined"  required ng-model = "user.yearJoin"  max="2016" class="form-control">
+                                                            </div>
+                                                        </div>  
+                                                        <div class = "col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">Post held in church
+                                                              </label>
+                                                               <input type="text" name="post" required ng-model ="user.postHeld" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Date of new Birth
+                                                                
+                                                                </label>
+                                                              <input type="number" name="dateNew" required ng-model = "user.newBirth" max="10-2-2016" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                   <label class="control-label">Are you Baptized by the Holy Spirit?</label>
+                                                                   <select name="baptized" name="baptize" required ng-model ="user.baptized" class="form-control">
+                                                                         <option disabled="" selected=""></option>
+                                                                          <option value="no">No</option>
+                                                                         <option value="yes">Yes</option>                   
+                                                                    </select>
+                                                            </div>  
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="tab-pane" id="service">  
+                                            <div class="row">  
+                                                      <h4 class="info-text">Please Ensure You Fill All Fields Correctly</h4>
+                                                <div class="col-sm-12">
+                                                    <div class="row">              
+                                                        <div class = "col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">Have you served in the technical crew in your church, if yes which department did you serve under in the unit:
+                                                              </label>
+                                                               <input type="text" name ="serveTech"  required ng-model ="user.served" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class = "col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                              <label class="control-label">Why do you want to Join the technical unit: 
+                                                              </label>
+                                                               <input type="text" name ="whyTech" required ng-model="user.joinTech" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                   <label class="control-label">Which sub-unit do you have perfect technical unit:
+                                                                    </label>
+                                                                   <select name="gender" name = "choiceSub" required ng-model="user.subUnit" class="form-control">
+                                                                         <option disabled="" selected=""></option>
+                                                                          <option value="audio">Audio</option>
+                                                                         <option value="visual">Visual</option>                   
+                                                                    </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group label-floating">
+                                                                   <label class="control-label">Are you ready to serve in any arm of this unit: 
+                                                                    </label>
+                                                                   <select name="gender" name="ready" required ng-model = "user.readyServe" class="form-control">
+                                                                         <option disabled="" selected=""></option>
+                                                                          <option value="no">No</option>
+                                                                         <option value="yes">Yes</option>                   
+                                                                    </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                          <textarea name="regular" disabled class="form-control">I HEREBY AGREE THAT EVERY INFORMATION GIVEN ABOVE IS RIGHT, AND I STAND TO BE RUSTICATED IF THEY ARE FOUND WRONG</textarea>
+                                                                                        &nbsp;
+                                                                                       &nbsp;
+                                                                                             &nbsp;
+                                                                                 <input type="checkbox" name="terms" required ng-model="user.agree" value="Agreed" style="text-align: left; margin-left: 20px;"> I agree
+                                                            </div>                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>            
+                                        </div>          
+                                    </div> 
+                                    <div class="wizard-footer">
+                                        <div class="pull-right">
+                                            <input type='button' class='btn btn-next btn-fill btn-rose btn-wd' name='next' value='Next' />
+                                            <input type='button' class='btn btn-finish btn-fill btn-rose btn-wd' name='submit' value='Finish' />
+                                        </div>
+                                        <div class="pull-left">
+                                            <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                                        </div>
+                                     </div>   
+                                </form>
+                            </div>
+                        </div>
+                        <!-- wizard container -->
+                    </div>
+                </div>
+            </div>
+            <!-- <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a ui-sref="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="#">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="#">
+                                    Blog
+                                </a>
+
+                            </li>
+                        </ul>
+                    </nav> -->
+                    <div class="icon" style="margin-left: 480px;">
+                        &copy; 2017
+                        Developed By Jehn
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
